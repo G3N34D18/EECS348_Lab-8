@@ -6,8 +6,9 @@
 
 class Matrix {
 public:
+    std::vector<std::vector<int>> nums;
     Matrix(std::size_t N);
-    Matrix(std::vector<std::vector<int>> nums);
+    Matrix(std::vector<std::vector<int>> values);
 
     Matrix operator+(const Matrix &rhs) const;
     Matrix operator*(const Matrix &rhs) const;
